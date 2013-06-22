@@ -1,1 +1,2 @@
-#another test file, this time on master branch
+
+#a merged test file
