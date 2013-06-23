@@ -30,7 +30,6 @@ class KnightPathFinder
   private
 
   def build_move_tree(parent)
-
     self.class.new_move_positions(parent.value).each do |pos|
       parent.make_child(pos) unless @move_tree.bfs(pos)
     end
@@ -40,7 +39,6 @@ class KnightPathFinder
         build_move_tree(child)
       end
     end
-
   end
 
 end

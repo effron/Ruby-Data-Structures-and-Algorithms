@@ -76,6 +76,11 @@ class TreeNode
 
     nil
   end
+  
+  def count
+    1 + self.children.map(&:count).sum
+  end
+  
 end
 
 if $PROGRAM_NAME == __FILE__
